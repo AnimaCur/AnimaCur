@@ -48,8 +48,8 @@
         extend: {
           colors: {
             brand: {
-              teal: '#135c59',
-              tealDark: '#0e4644',
+              teal: '#c59b27',
+              tealDark: '#9a731b',
               coral: '#e05a5a',
               amber: '#d9822b',
               charcoal: '#2d2420',
@@ -78,7 +78,7 @@
     }
 
     .btn-primary {
-      background-color: #135c59;
+      background-color: #c59b27;
       color: #ffffff;
       padding: 0.75rem 1.5rem;
       border-radius: 9999px;
@@ -91,14 +91,14 @@
       gap: 0.5rem;
     }
     .btn-primary:hover {
-      background-color: #0e4644;
+      background-color: #9a731b;
       transform: translateY(-2px);
       box-shadow: 0 15px 30px -5px rgba(19, 92, 89, 0.35);
     }
 
     .btn-secondary {
-      border: 2px solid #135c59;
-      color: #135c59;
+      border: 2px solid #c59b27;
+      color: #c59b27;
       padding: 0.75rem 1.5rem;
       border-radius: 9999px;
       font-weight: 700;
@@ -109,7 +109,7 @@
       gap: 0.5rem;
     }
     .btn-secondary:hover {
-      background-color: #135c59;
+      background-color: #c59b27;
       color: #ffffff;
       transform: translateY(-2px);
     }
@@ -126,7 +126,7 @@
       background: #fbf9f5;
     }
     ::-webkit-scrollbar-thumb {
-      background: #135c59;
+      background: #c59b27;
       border-radius: 4px;
     }
   </style>
@@ -164,7 +164,7 @@
 <body class="min-h-screen flex flex-col justify-between antialiased">
 
   <!-- NAVIGATION BAR -->
-  <header class="sticky top-0 z-40 bg-[#fbf9f5]/90 backdrop-blur-md border-b border-[#135c59]/10">
+  <header class="sticky top-0 z-40 bg-[#fbf9f5]/90 backdrop-blur-md border-b border-[#c59b27]/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         
@@ -172,7 +172,7 @@
         <a href="#" class="flex items-center gap-3 group">
           <img src="AnimaCur.png" alt="AnimaCur Logo" style="max-height: 50px; width: auto;" class="object-contain" />
           <div class="flex flex-col">
-            <span class="font-display font-extrabold text-lg sm:text-2xl text-[#135c59] tracking-tight leading-none">
+            <span class="font-display font-extrabold text-lg sm:text-2xl text-[#c59b27] tracking-tight leading-none">
               AnimaCur
             </span>
             <span class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-widest text-[#d9822b] mt-0.5 whitespace-nowrap">
@@ -183,9 +183,9 @@
 
         <!-- Desktop Navigation Links -->
         <nav class="hidden md:flex items-center gap-6">
-          <button onclick="openServicesModal()" class="text-[#2d2420]/80 hover:text-[#135c59] text-sm font-semibold transition-colors flex items-center gap-1.5">
+          <button onclick="openServicesModal()" class="text-[#2d2420]/80 hover:text-[#c59b27] text-sm font-semibold transition-colors flex items-center gap-1.5">
             <span data-i18n="nav_services">Services</span>
-            <i class="fa-solid fa-chevron-down text-xs text-[#135c59]"></i>
+            <i class="fa-solid fa-chevron-down text-xs text-[#c59b27]"></i>
           </button>
         </nav>
 
@@ -193,7 +193,7 @@
         <div class="flex items-center gap-2 sm:gap-3">
           
           <div class="hidden sm:flex items-center gap-3">
-            <a href="https://www.facebook.com/profile.php?id=61592649189328" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-[#135c59]/5 hover:bg-[#135c59]/10 flex items-center justify-center text-[#135c59] transition-colors" title="Facebook">
+            <a href="https://www.facebook.com/profile.php?id=61592649189328" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-[#c59b27]/5 hover:bg-[#c59b27]/10 flex items-center justify-center text-[#c59b27] transition-colors" title="Facebook">
               <i class="fa-brands fa-facebook-f text-base"></i>
             </a>
             <a href="https://wa.me/201124333193" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-[#25D366]/10 hover:bg-[#25D366]/20 flex items-center justify-center text-[#25D366] transition-colors" title="WhatsApp">
@@ -212,13 +212,13 @@
           </div>
 
           <!-- Language Switcher Button -->
-          <button onclick="setLanguage(currentLang === 'en' ? 'ar' : 'en')" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-[#135c59]/20 text-[#135c59] hover:bg-[#135c59]/10 text-xs font-bold transition-colors">
+          <button onclick="setLanguage(currentLang === 'en' ? 'ar' : 'en')" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-[#c59b27]/20 text-[#c59b27] hover:bg-[#c59b27]/10 text-xs font-bold transition-colors">
             <i class="fa-solid fa-globe text-sm"></i>
             <span class="lang-btn-text">عربي</span>
           </button>
 
           <!-- Mobile Menu Toggle Button -->
-          <button onclick="toggleMobileMenu()" aria-label="Toggle Navigation Menu" class="md:hidden p-2 text-[#135c59] rounded-lg hover:bg-[#135c59]/10 focus:outline-none flex items-center justify-center">
+          <button onclick="toggleMobileMenu()" aria-label="Toggle Navigation Menu" class="md:hidden p-2 text-[#c59b27] rounded-lg hover:bg-[#c59b27]/10 focus:outline-none flex items-center justify-center">
             <i id="menu-icon-bars" class="fa-solid fa-bars text-2xl"></i>
             <i id="menu-icon-close" class="fa-solid fa-xmark text-2xl hidden"></i>
           </button>
@@ -229,20 +229,20 @@
     </div>
 
     <!-- Mobile Dropdown Navigation -->
-    <div id="mobile-menu" class="hidden md:hidden border-t border-[#135c59]/10 bg-[#fbf9f5] px-4 pt-4 pb-6 space-y-3 shadow-lg">
+    <div id="mobile-menu" class="hidden md:hidden border-t border-[#c59b27]/10 bg-[#fbf9f5] px-4 pt-4 pb-6 space-y-3 shadow-lg">
       <button onclick="openServicesModal(); toggleMobileMenu();" class="w-full text-left py-2 text-[#2d2420] font-semibold flex items-center justify-between">
         <span data-i18n="nav_services">Services</span>
-        <i class="fa-solid fa-chevron-right text-xs text-[#135c59]"></i>
+        <i class="fa-solid fa-chevron-right text-xs text-[#c59b27]"></i>
       </button>
       <button onclick="openShopModal(); toggleMobileMenu();" class="w-full text-left py-2 text-[#2d2420] font-semibold flex items-center gap-2">
-        <i class="fa-solid fa-cart-shopping text-[#135c59]"></i>
+        <i class="fa-solid fa-cart-shopping text-[#c59b27]"></i>
         <span data-i18n="nav_shop">Shop</span>
       </button>
       <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-[#2d2420] font-semibold" data-i18n="nav_about">About Us</a>
       
-      <div class="pt-4 border-t border-[#135c59]/10 flex flex-col gap-3">
+      <div class="pt-4 border-t border-[#c59b27]/10 flex flex-col gap-3">
         <div class="flex items-center gap-3">
-          <a href="https://www.facebook.com/profile.php?id=61592649189328" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-full bg-[#135c59]/10 text-[#135c59] flex-1 flex items-center justify-center gap-2 text-xs font-bold">
+          <a href="https://www.facebook.com/profile.php?id=61592649189328" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-full bg-[#c59b27]/10 text-[#c59b27] flex-1 flex items-center justify-center gap-2 text-xs font-bold">
             <i class="fa-brands fa-facebook-f"></i>
             <span>Facebook</span>
           </a>
@@ -275,12 +275,12 @@
           
           <!-- Hero Text Column -->
           <div>
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#135c59]/10 text-[#135c59] text-xs font-bold uppercase tracking-wider mb-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#c59b27]/10 text-[#c59b27] text-xs font-bold uppercase tracking-wider mb-6">
               <i class="fa-solid fa-wand-magic-sparkles text-[#d9822b]"></i>
               <span data-i18n="hero_badge">AnimaCur Veterinary Care</span>
             </div>
 
-            <h1 data-i18n="hero_title" class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-extrabold text-[#135c59] leading-tight mb-6">
+            <h1 data-i18n="hero_title" class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-extrabold text-[#c59b27] leading-tight mb-6">
               These souls are our mission
             </h1>
 
@@ -306,9 +306,9 @@
             </div>
 
             <!-- Trust Highlights Badges -->
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-[#135c59]/10">
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-[#c59b27]/10">
               <div class="flex items-center gap-2.5">
-                <div class="p-2 rounded-xl bg-[#135c59]/10 text-[#135c59] w-9 h-9 flex items-center justify-center">
+                <div class="p-2 rounded-xl bg-[#c59b27]/10 text-[#c59b27] w-9 h-9 flex items-center justify-center">
                   <i class="fa-solid fa-house text-sm"></i>
                 </div>
                 <span data-i18n="badge_home" class="text-xs font-bold text-[#2d2420]/80">Home Visits</span>
@@ -330,7 +330,7 @@
 
           <!-- Hero Image Column -->
           <div class="relative flex justify-center">
-            <div class="relative z-10 p-4 sm:p-6 rounded-[2.5rem] bg-white backdrop-blur-md border border-[#135c59]/15 shadow-2xl max-w-md w-full text-center flex items-center justify-center">
+            <div class="relative z-10 p-4 sm:p-6 rounded-[2.5rem] bg-white backdrop-blur-md border border-[#c59b27]/15 shadow-2xl max-w-md w-full text-center flex items-center justify-center">
               <img src="AnimaCur.png" alt="AnimaCur Veterinary Care Logo" style="max-height: 380px; width: auto;" class="mx-auto object-contain rounded-2xl" />
             </div>
           </div>
@@ -340,10 +340,10 @@
     </section>
 
     <!-- ABOUT SECTION -->
-    <section id="about" class="py-16 bg-white/60 border-y border-[#135c59]/10">
+    <section id="about" class="py-16 bg-white/60 border-y border-[#c59b27]/10">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-12">
-          <h2 data-i18n="about_title" class="text-3xl sm:text-4xl font-display font-bold text-[#135c59] mb-4">
+          <h2 data-i18n="about_title" class="text-3xl sm:text-4xl font-display font-bold text-[#c59b27] mb-4">
             Compassionate Home-Visit Veterinary Care
           </h2>
           <p data-i18n="about_desc" class="text-[#2d2420]/75 text-base sm:text-lg">
@@ -358,19 +358,19 @@
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-10 sm:mb-12">
           <p data-i18n="why_tag" class="text-[#d9822b] font-bold uppercase tracking-[0.2em] text-xs sm:text-sm mb-2">Why AnimaCur?</p>
-          <h2 data-i18n="why_title" class="font-display font-extrabold text-3xl sm:text-4xl text-[#135c59]">Care, Convenience & Trust</h2>
+          <h2 data-i18n="why_title" class="font-display font-extrabold text-3xl sm:text-4xl text-[#c59b27]">Care, Convenience & Trust</h2>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          <div class="bg-white/80 rounded-3xl p-6 text-center border border-[#135c59]/10 shadow-sm hover:shadow-md transition-shadow">
-            <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-[#135c59]/10 flex items-center justify-center text-[#135c59]">
+          <div class="bg-white/80 rounded-3xl p-6 text-center border border-[#c59b27]/10 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-[#c59b27]/10 flex items-center justify-center text-[#c59b27]">
               <i class="fa-solid fa-paw text-2xl"></i>
             </div>
             <h3 data-i18n="why_card1_title" class="font-display font-bold text-lg text-[#2d2420] mb-2">Professional Veterinary Care</h3>
             <p data-i18n="why_card1_desc" class="text-sm text-[#2d2420]/65 leading-relaxed">Professional veterinary care with your comfort in mind.</p>
           </div>
 
-          <div class="bg-white/80 rounded-3xl p-6 text-center border border-[#135c59]/10 shadow-sm hover:shadow-md transition-shadow">
+          <div class="bg-white/80 rounded-3xl p-6 text-center border border-[#c59b27]/10 shadow-sm hover:shadow-md transition-shadow">
             <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-[#d9822b]/10 flex items-center justify-center text-[#d9822b]">
               <i class="fa-solid fa-house text-2xl"></i>
             </div>
@@ -378,7 +378,7 @@
             <p data-i18n="why_card2_desc" class="text-sm text-[#2d2420]/65 leading-relaxed">Convenient veterinary visits at home, where your animal feels safe and comfortable.</p>
           </div>
 
-          <div class="bg-white/80 rounded-3xl p-6 text-center border border-[#135c59]/10 shadow-sm hover:shadow-md transition-shadow">
+          <div class="bg-white/80 rounded-3xl p-6 text-center border border-[#c59b27]/10 shadow-sm hover:shadow-md transition-shadow">
             <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-[#e05a5a]/10 flex items-center justify-center text-[#e05a5a]">
               <i class="fa-solid fa-bag-shopping text-2xl"></i>
             </div>
@@ -386,7 +386,7 @@
             <p data-i18n="why_card3_desc" class="text-sm text-[#2d2420]/65 leading-relaxed">Useful products and essentials, easy to order when you need them.</p>
           </div>
 
-          <div class="bg-white/80 rounded-3xl p-6 text-center border border-[#135c59]/10 shadow-sm hover:shadow-md transition-shadow">
+          <div class="bg-white/80 rounded-3xl p-6 text-center border border-[#c59b27]/10 shadow-sm hover:shadow-md transition-shadow">
             <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-[#25D366]/10 flex items-center justify-center text-[#25D366]">
               <i class="fa-brands fa-whatsapp text-2xl"></i>
             </div>
