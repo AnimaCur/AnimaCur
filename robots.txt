@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://furry4ever.github.io/sitemap.xml
+Sitemap: https://animacur.github.io/AnimaCur/sitemap.xml
