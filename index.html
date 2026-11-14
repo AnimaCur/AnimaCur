@@ -400,7 +400,7 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-[#135c59] text-white pt-16 pb-8">
+  <footer class="bg-[#c59b27] text-white pt-16 pb-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-3 gap-10 pb-12 border-b border-white/15">
         
@@ -480,10 +480,10 @@
   <div id="booking-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 overflow-y-auto">
     <div onclick="closeBookingModal()" class="fixed inset-0 modal-backdrop"></div>
     
-    <div class="relative z-10 w-full max-w-xl bg-white rounded-3xl shadow-2xl border border-[#135c59]/15 overflow-hidden my-8">
+    <div class="relative z-10 w-full max-w-xl bg-white rounded-3xl shadow-2xl border border-[#c59b27]/15 overflow-hidden my-8">
       
       <!-- Modal Header -->
-      <div class="bg-[#135c59] text-white p-6 sm:p-8 relative">
+      <div class="bg-[#c59b27] text-white p-6 sm:p-8 relative">
         <button onclick="closeBookingModal()" class="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors">
           <i class="fa-solid fa-xmark text-lg"></i>
         </button>
@@ -501,40 +501,40 @@
           <input type="hidden" name="access_key" value="96a85d2d-8127-47d2-ab14-c60c00da5801">
           
           <div>
-            <label data-i18n="form_owner_name" class="block text-xs font-bold uppercase tracking-wider text-[#135c59] mb-1">Owner Name *</label>
-            <input type="text" name="owner_name" required data-i18n-placeholder="placeholder_owner" placeholder="Your Name" class="w-full px-4 py-3 rounded-xl bg-[#fbf9f5] border border-[#135c59]/20 focus:outline-none focus:border-[#135c59] text-sm" />
+            <label data-i18n="form_owner_name" class="block text-xs font-bold uppercase tracking-wider text-[#c59b27] mb-1">Owner Name *</label>
+            <input type="text" name="owner_name" required data-i18n-placeholder="placeholder_owner" placeholder="Your Name" class="w-full px-4 py-3 rounded-xl bg-[#fbf9f5] border border-[#c59b27]/20 focus:outline-none focus:border-[#c59b27] text-sm" />
           </div>
 
           <!-- Pet Type & Pet Name -->
           <div class="grid grid-cols-2 gap-4">
             <div>
-              <label data-i18n="form_pet_type" class="block text-xs font-bold uppercase tracking-wider text-[#135c59] mb-1">Pet Type *</label>
-              <select name="pet_type" required class="w-full px-4 py-3 rounded-xl bg-[#fbf9f5] border border-[#135c59]/20 focus:outline-none focus:border-[#135c59] text-sm">
+              <label data-i18n="form_pet_type" class="block text-xs font-bold uppercase tracking-wider text-[#c59b27] mb-1">Pet Type *</label>
+              <select name="pet_type" required class="w-full px-4 py-3 rounded-xl bg-[#fbf9f5] border border-[#c59b27]/20 focus:outline-none focus:border-[#c59b27] text-sm">
                 <option value="Cat" data-i18n="pet_type_cat">Cat</option>
                 <option value="Dog" data-i18n="pet_type_dog">Dog</option>
                 <option value="Other" data-i18n="pet_type_other">Other</option>
               </select>
             </div>
             <div>
-              <label data-i18n="form_animal_name" class="block text-xs font-bold uppercase tracking-wider text-[#135c59] mb-1">Patient Name *</label>
-              <input type="text" name="animal_name" required data-i18n-placeholder="placeholder_patient" placeholder="e.g. Patient name" class="w-full px-4 py-3 rounded-xl bg-[#fbf9f5] border border-[#135c59]/20 focus:outline-none focus:border-[#135c59] text-sm" />
+              <label data-i18n="form_animal_name" class="block text-xs font-bold uppercase tracking-wider text-[#c59b27] mb-1">Patient Name *</label>
+              <input type="text" name="animal_name" required data-i18n-placeholder="placeholder_patient" placeholder="e.g. Patient name" class="w-full px-4 py-3 rounded-xl bg-[#fbf9f5] border border-[#c59b27]/20 focus:outline-none focus:border-[#c59b27] text-sm" />
             </div>
           </div>
 
           <div class="grid grid-cols-2 gap-4">
             <div>
-              <label data-i18n="form_gender" class="block text-xs font-bold uppercase tracking-wider text-[#135c59] mb-1">Gender *</label>
+              <label data-i18n="form_gender" class="block text-xs font-bold uppercase tracking-wider text-[#c59b27] mb-1">Gender *</label>
               <input type="hidden" name="gender" id="gender-input" value="Male">
               <div class="grid grid-cols-2 gap-2">
-                <button type="button" id="gender-male" onclick="setGender('Male')" data-i18n="form_male" class="py-3 px-2 rounded-xl border border-[#135c59]/20 text-xs font-bold text-[#135c59] bg-[#fbf9f5] transition-all">Male</button>
-                <button type="button" id="gender-female" onclick="setGender('Female')" data-i18n="form_female" class="py-3 px-2 rounded-xl border border-[#135c59]/20 text-xs font-bold text-[#135c59] bg-[#fbf9f5] transition-all">Female</button>
+                <button type="button" id="gender-male" onclick="setGender('Male')" data-i18n="form_male" class="py-3 px-2 rounded-xl border border-[#c59b27]/20 text-xs font-bold text-[#c59b27] bg-[#fbf9f5] transition-all">Male</button>
+                <button type="button" id="gender-female" onclick="setGender('Female')" data-i18n="form_female" class="py-3 px-2 rounded-xl border border-[#c59b27]/20 text-xs font-bold text-[#c59b27] bg-[#fbf9f5] transition-all">Female</button>
               </div>
             </div>
             <div>
-              <label data-i18n="form_animal_age" class="block text-xs font-bold uppercase tracking-wider text-[#135c59] mb-1">Animal Age *</label>
+              <label data-i18n="form_animal_age" class="block text-xs font-bold uppercase tracking-wider text-[#c59b27] mb-1">Animal Age *</label>
               <div class="flex gap-2">
-                <input type="number" name="animal_age" required min="0" placeholder="e.g. 3" class="w-1/2 px-3 py-3 rounded-xl bg-[#fbf9f5] border border-[#135c59]/20 focus:outline-none focus:border-[#135c59] text-sm" />
-                <select name="age_unit" class="w-1/2 px-2 py-3 rounded-xl bg-[#fbf9f5] border border-[#135c59]/20 focus:outline-none focus:border-[#135c59] text-sm">
+                <input type="number" name="animal_age" required min="0" placeholder="e.g. 3" class="w-1/2 px-3 py-3 rounded-xl bg-[#fbf9f5] border border-[#c59b27]/20 focus:outline-none focus:border-[#c59b27] text-sm" />
+                <select name="age_unit" class="w-1/2 px-2 py-3 rounded-xl bg-[#fbf9f5] border border-[#c59b27]/20 focus:outline-none focus:border-[#c59b27] text-sm">
                   <option value="Years" data-i18n="unit_years">Years</option>
                   <option value="Months" data-i18n="unit_months">Months</option>
                   <option value="Weeks" data-i18n="unit_weeks">Weeks</option>
@@ -546,18 +546,18 @@
 
           <div class="grid grid-cols-2 gap-4">
             <div>
-              <label data-i18n="form_phone" class="block text-xs font-bold uppercase tracking-wider text-[#135c59] mb-1">Phone Number *</label>
-              <input type="tel" name="phone" required data-i18n-placeholder="placeholder_phone" placeholder="phone number" class="w-full px-4 py-3 rounded-xl bg-[#fbf9f5] border border-[#135c59]/20 focus:outline-none focus:border-[#135c59] text-sm" />
+              <label data-i18n="form_phone" class="block text-xs font-bold uppercase tracking-wider text-[#c59b27] mb-1">Phone Number *</label>
+              <input type="tel" name="phone" required data-i18n-placeholder="placeholder_phone" placeholder="phone number" class="w-full px-4 py-3 rounded-xl bg-[#fbf9f5] border border-[#c59b27]/20 focus:outline-none focus:border-[#c59b27] text-sm" />
             </div>
             <div>
-              <label data-i18n="form_date" class="block text-xs font-bold uppercase tracking-wider text-[#135c59] mb-1">Preferred Date *</label>
-              <input type="date" name="preferred_date" required class="w-full px-4 py-3 rounded-xl bg-[#fbf9f5] border border-[#135c59]/20 focus:outline-none focus:border-[#135c59] text-sm" />
+              <label data-i18n="form_date" class="block text-xs font-bold uppercase tracking-wider text-[#c59b27] mb-1">Preferred Date *</label>
+              <input type="date" name="preferred_date" required class="w-full px-4 py-3 rounded-xl bg-[#fbf9f5] border border-[#c59b27]/20 focus:outline-none focus:border-[#c59b27] text-sm" />
             </div>
           </div>
 
           <div>
-            <label data-i18n="form_reason" class="block text-xs font-bold uppercase tracking-wider text-[#135c59] mb-1">Reason for Visit</label>
-            <textarea name="reason" rows="3" data-i18n-placeholder="placeholder_reason" placeholder="Describe symptoms, vaccination request, or routine check-up details..." class="w-full px-4 py-3 rounded-xl bg-[#fbf9f5] border border-[#135c59]/20 focus:outline-none focus:border-[#135c59] text-sm"></textarea>
+            <label data-i18n="form_reason" class="block text-xs font-bold uppercase tracking-wider text-[#c59b27] mb-1">Reason for Visit</label>
+            <textarea name="reason" rows="3" data-i18n-placeholder="placeholder_reason" placeholder="Describe symptoms, vaccination request, or routine check-up details..." class="w-full px-4 py-3 rounded-xl bg-[#fbf9f5] border border-[#c59b27]/20 focus:outline-none focus:border-[#c59b27] text-sm"></textarea>
           </div>
 
           <button type="submit" class="btn-primary w-full py-3.5 mt-2">
@@ -569,10 +569,10 @@
 
       <!-- Success Screen -->
       <div id="booking-success-container" class="hidden p-8 text-center space-y-4">
-        <div class="w-16 h-16 bg-[#135c59]/10 text-[#135c59] rounded-full flex items-center justify-center mx-auto">
+        <div class="w-16 h-16 bg-[#c59b27]/10 text-[#c59b27] rounded-full flex items-center justify-center mx-auto">
           <i class="fa-solid fa-circle-check text-4xl"></i>
         </div>
-        <h3 data-i18n="success_title" class="text-2xl font-display font-bold text-[#135c59]">Appointment Request Received!</h3>
+        <h3 data-i18n="success_title" class="text-2xl font-display font-bold text-[#c59b27]">Appointment Request Received!</h3>
         <p data-i18n="success_desc" class="text-sm text-[#2d2420]/80 leading-relaxed max-w-md mx-auto">
           Thank you for choosing AnimaCur. Our veterinary care coordinator will contact you via phone or WhatsApp shortly to confirm your visit time.
         </p>
