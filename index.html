@@ -805,7 +805,7 @@
       <!-- Modal Header -->
       <div class="flex items-center justify-between gap-4 px-5 py-4 sm:px-7 border-b border-[#135c59]/10 bg-[#fbf9f5]">
         <div>
-          <h2 id="shop-title" class="text-xl sm:text-2xl font-extrabold text-[#135c59]">Furry4Ever Shop</h2>
+          <h2 id="shop-title" class="text-xl sm:text-2xl font-extrabold text-[#135c59]">AnimaCur Shop</h2>
           <p data-i18n="shop_sub" class="text-xs sm:text-sm text-[#2d2420]/60 mt-1">Select products and quantities, review your cart, and submit your order</p>
         </div>
         <button onclick="closeShopModal()" aria-label="Close Shop" class="w-10 h-10 rounded-full bg-[#135c59]/10 text-[#135c59] flex items-center justify-center hover:bg-[#135c59]/20">
@@ -952,7 +952,7 @@
 
       try {
         const folders = await fetch(
-          "https://api.github.com/repos/AnimaCur/animacur.github.io/contents/shop/products?ref=main",
+        "https://api.github.com/repos/AnimaCur/AnimaCur/contents/shop/products?ref=main",
           {
             cache: "no-cache",
             headers: { "Accept": "application/vnd.github+json" }
@@ -968,7 +968,7 @@
         for (const folder of productFolders) {
           try {
             const data = await fetch(
-              `/shop/products/${encodeURIComponent(folder.name)}/product.json`,
+              'shop/products/${encodeURIComponent(folder.name)}/product.json`,
               { cache: "no-cache" }
             ).then(r => {
               if (!r.ok) throw new Error("Product data not found");
@@ -1071,8 +1071,8 @@
         const pName = getProductField(p.name, lang);
         const pCat = getProductField(p.category, lang);
 
-        const productUrl = `/shop/product.html?slug=${encodeURIComponent(p.slug)}`;
-        const productImage = `/shop/products/${encodeURIComponent(p.slug)}/${encodeURIComponent(p.image || "image.jpg")}`;
+        const productUrl = `shop/product.html?slug=${encodeURIComponent(p.slug)}`;
+        const productImage = `shop/products/${encodeURIComponent(p.slug)}/${encodeURIComponent(p.image || "image.jpg")}`;
         const currentQtyInCart = cart[p.slug] ? cart[p.slug].qty : 1;
 
         return `
