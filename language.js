@@ -9,9 +9,9 @@ const translations = {
     lang_btn: "عربي",
 
     // Hero Section
-    hero_badge: "Furry4Ever Pets Veterinary Care",
-    hero_title: "These souls are our mission",
-    hero_subtitle: "Specialized veterinary care for your beloved pets",
+    hero_badge: "AnimaCur Professional Veterinary Care",
+    hero_title: "Their souls are our mission",
+    hero_subtitle: "Specialized veterinary care",
     btn_book: "Book an Appointment",
     btn_shop: "Shop Now",
     btn_services: "View Services",
@@ -21,59 +21,61 @@ const translations = {
 
     // About Section
     about_title: "Compassionate Home-Visit Veterinary Care",
-    about_desc: "We understand that hospital trips can be stressful for your pets. Our veterinary team brings professional health assessments, vaccinations, and specialized nursing directly to your home.",
+    about_desc: "We understand that hospital trips can be stressful for your animals. Our veterinary team brings professional health assessments, vaccinations, and specialized nursing directly to your home.",
 
-    // Why Furry4Ever Section
-    why_tag: "Why Furry4Ever?",
+    // Why AnimaCur Section
+    why_tag: "Why AnimaCur?",
     why_title: "Care, Convenience & Trust",
     why_card1_title: "Professional Veterinary Care",
-    why_card1_desc: "Professional veterinary care with your pet's comfort and wellbeing in mind.",
+    why_card1_desc: "Professional veterinary care with your comfort in mind.",
     why_card2_title: "Home Veterinary Visits",
-    why_card2_desc: "Convenient veterinary visits at home, where your pet feels safe and comfortable.",
-    why_card3_title: "Pet Products",
+    why_card2_desc: "Convenient veterinary visits at home, where your animal feels safe and comfortable.",
+    why_card3_title: "Products",
     why_card3_desc: "Useful pet products and essentials, easy to order when you need them.",
     why_card4_title: "Easy Booking & Support",
     why_card4_desc: "Book a visit or ask your questions easily through WhatsApp.",
 
     // Footer
-    footer_desc: "Dedicated to the health, comfort, and wellness of your pets.",
+    footer_desc: "Dedicated to the health, comfort, and wellness of your animals.",
     footer_quick_links: "Quick Links",
     footer_contact_us: "Contact Us",
     footer_location: "Cairo, Egypt",
     footer_whatsapp_direct: "WhatsApp Direct Booking",
-    footer_rights: "© 2026 Furry4Ever Pets Veterinary Care. All rights reserved.",
-    footer_rights_text: "Pets Veterinary Care. All rights reserved.",
-    footer_motto: '"These souls are our mission"',
+    footer_rights: "AnimaCur Professional Veterinary Care.",
+    footer_rights_text: "Professional Veterinary Care.",
+    footer_motto: '"Their souls are our mission"',
 
     // Booking Modal
     modal_book_tag: "Home Visit Care Request",
     modal_book_title: "Book an Appointment",
     modal_book_sub: "Fill in the details below and our team will contact you promptly.",
     form_owner_name: "Owner Name *",
-    form_pet_type: "Pet Type *",
+    form_pet_type: "Animal Type *",
     pet_type_cat: "Cat",
     pet_type_dog: "Dog",
     pet_type_other: "Other",
-    form_pet_name: "Pet Name *",
+    form_pet_name: "Animal Name *",
     form_gender: "Gender *",
     form_male: "Male",
     form_female: "Female",
-    form_pet_age: "Pet Age *",
+    form_pet_age: "Animal Age *",
     form_age_unit: "Age Unit",
     unit_years: "Years",
     unit_months: "Months",
+    unit_weeks: "Weeks",
+    unit_days: "Days",
     form_phone: "Phone Number *",
-    form_date: "Preferred Date *",
+    form_date: "Preferred Check Date *",
     form_reason: "Reason for Visit",
     btn_confirm_booking: "Confirm Booking Request",
     placeholder_owner: "Your Name",
-    placeholder_pet: "e.g. Bella",
-    placeholder_phone: "01124333193",
+    placeholder_pet: "Animal name",
+    placeholder_phone: "Your phone number",
     placeholder_reason: "Describe symptoms, vaccination request, or routine check-up details...",
 
     // Booking Success Screen
     success_title: "Appointment Request Received!",
-    success_desc: "Thank you for choosing Furry4Ever. Our veterinary care coordinator will contact you via phone or WhatsApp shortly to confirm your visit time.",
+    success_desc: "Thank you for choosing AnimaCur. Our veterinary care coordinator will contact you to confirm your visit time.",
     btn_close: "Close Window",
 
     // Services Modal
@@ -89,10 +91,10 @@ const translations = {
     srv3_title: "Regular Follow-ups",
     srv3_desc: "Ongoing monitoring and evaluation for post-treatment recovery and chronic conditions.",
     srv4_title: "Specialized Nursing Care",
-    srv4_desc: "Dedicated nursing support for senior pets and recovering animals requiring extra gentle care.",
+    srv4_desc: "Dedicated nursing support for senior and recovering animals requiring extra gentle care.",
     srv5_title: "Hygienic Grooming",
-    srv5_desc: "Gentle, stress-free grooming and sanitary care designed to keep pets clean and comfortable.",
-    srv_custom_title: "Need custom medical care for your pet?",
+    srv5_desc: "Gentle, stress-free grooming and sanitary care designed to keep animal clean and comfortable.",
+    srv_custom_title: "Need custom medical care for your animal?",
     srv_custom_desc: "Contact us directly via WhatsApp for tailored visit planning.",
 
     // Shop Modal & Cart
@@ -107,7 +109,7 @@ const translations = {
     cart_empty: "Your cart is empty.",
     cart_customer_info: "Customer Information",
     shop_success_title: "Order Submitted Successfully!",
-    shop_success_desc: "Thank you for your order! Our team will contact you shortly to confirm the items and delivery details."
+    shop_success_desc: "Thank you for your order! Our team will contact you to confirm the items and delivery details."
   },
 
   ar: {
@@ -121,8 +123,8 @@ const translations = {
 
     // Hero Section
     hero_badge: "Furry4Ever للرعاية البيطرية",
-    hero_title: "هذه الأرواح هي مهمتنا",
-    hero_subtitle: "رعاية بيطرية متخصصة لأليفك العزيز في المنزل",
+    hero_title: "أرواحهم هي مهمتنا",
+    hero_subtitle: "رعاية بيطرية متخصصة في المنزل",
     btn_book: "احجز زيارة منزلية",
     btn_shop: "تسوق الآن",
     btn_services: "عرض الخدمات",
@@ -132,29 +134,29 @@ const translations = {
 
     // About Section
     about_title: "رعاية بيطرية منزلية بكل حُب واهتمام",
-    about_desc: "نعلم أن الذهاب للعيادات قد يكون مرهقاً لأليفك. فريقنا البيطري يقدم الفحوصات الطبية، التطعيمات، والرعاية التمريضية المتخصصة مباشرة في منزلك.",
+    about_desc: "نعلم أن الذهاب للعيادات قد يكون مرهقاً . فريقنا البيطري يقدم الفحوصات الطبية، التطعيمات، والرعاية التمريضية المتخصصة مباشرة في منزلك.",
 
-    // Why Furry4Ever Section
-    why_tag: "لماذا Furry4Ever؟",
+    // Why AnimaCur Section
+    why_tag: "لماذا AnimaCur؟",
     why_title: "الرعاية، الراحة والثقة",
     why_card1_title: "رعاية بيطرية احترافية",
-    why_card1_desc: "خدمة بيطرية متكاملة تراعي راحة أليفك وسلامته أولاً.",
+    why_card1_desc: "خدمة بيطرية متكاملة تراعي راحة الحيوان وسلامته أولاً.",
     why_card2_title: "زيارات بيطرية منزلية",
-    why_card2_desc: "زيارات مريحة في المنزل، حيث يشعر أليفك بالأمان والاطمئنان.",
-    why_card3_title: "منتجات ومستلزمات الأليفة",
+    why_card2_desc: "زيارات مريحة في المنزل، حيث يشعر الحيوان بالأمان والاطمئنان.",
+    why_card3_title: "منتجات ومستلزمات",
     why_card3_desc: "منتجات واحتياجات أساسية ومفيدة، سهلة الطلب وقتما تحتاجها.",
     why_card4_title: "حجز وسهولة تواصل",
     why_card4_desc: "احجز زيارتك أو استفسر عن أي شيء بسهولة عبر الواتساب.",
 
     // Footer
-    footer_desc: "مخصصة لصحة، راحة، وسلامة أليفك دائماً.",
+    footer_desc: "مخصصة لصحة، راحة، وسلامة الحيوان دائماً.",
     footer_quick_links: "روابط سريعة",
     footer_contact_us: "تواصل معنا",
     footer_location: "القاهرة، مصر",
     footer_whatsapp_direct: "حجز مباشر عبر الواتساب",
-    footer_rights: "© 2026 Furry4Ever للرعاية البيطرية. جميع الحقوق محفوظة.",
-    footer_rights_text: "للرعاية البيطرية. جميع الحقوق محفوظة.",
-    footer_motto: '"هذه الأرواح هي مهمتنا"',
+    footer_rights: "AnimaCur للرعاية البيطرية .",
+    footer_rights_text: "للرعاية البيطرية.",
+    footer_motto: '"أرواحهم هي مهمتنا"',
 
     // Booking Modal
     modal_book_tag: "طلب زيارة منزلية",
@@ -165,26 +167,28 @@ const translations = {
     pet_type_cat: "قطة",
     pet_type_dog: "كلب",
     pet_type_other: "آخر",
-    form_pet_name: "اسم الأليف *",
-    form_gender: "جنس الأليف *",
+    form_pet_name: "اسم الحيوان *",
+    form_gender: "جنس الحيوان *",
     form_male: "ذكر",
     form_female: "أنثى",
-    form_pet_age: "عمر الأليف *",
+    form_pet_age: "عمر الحيوان *",
     form_age_unit: "وحدة العمر",
     unit_years: "سنوات",
     unit_months: "شهور",
+    unit_weeks: "أسابيع",
+    unit_days: "أيام",
     form_phone: "رقم الهاتف *",
-    form_date: "التاريخ المفضل *",
+    form_date: "التاريخ المفضل للفحص *",
     form_reason: "سبب الزيارة",
     btn_confirm_booking: "تأكيد طلب الحجز",
     placeholder_owner: "اسمك الكريم",
-    placeholder_pet: "مثال: بيلا",
-    placeholder_phone: "01124333193",
+    placeholder_pet: "اسم الحيوان",
+    placeholder_phone: "رقم الهاتف",
     placeholder_reason: "اكتب الأعراض، التطعيمات المطلوبة، أو تفاصيل الفحص الدوري...",
 
     // Booking Success Screen
     success_title: "تم استلام طلب الحجز بنجاح!",
-    success_desc: "شكراً لاختيارك خدماتنا. سيتواصل معك منسق الرعاية البيطرية عبر الهاتف أو الواتساب قريباً لتأكيد الموعد.",
+    success_desc: "شكراً لاختيارك خدماتنا. سيتم التواصل معك لتأكيد الموعد.",
     btn_close: "إغلاق النافذة",
 
     // Services Modal
@@ -202,8 +206,8 @@ const translations = {
     srv4_title: "تمريض ورعاية خاصة",
     srv4_desc: "دعم تمريضي مخصص لكبار السن من الحيوانات والحالات التي تتطلب عناية فائقة.",
     srv5_title: "العناية والنظافة (Grooming)",
-    srv5_desc: "جلسات عناية ونظافة هادئة وبدون توتر للحفاظ على نظافة وراحة أليفك.",
-    srv_custom_title: "تحتاج رعاية طبية خاصة لأليفك؟",
+    srv5_desc: "جلسات عناية ونظافة هادئة وبدون توتر للحفاظ على نظافة وراحة الحيوان.",
+    srv_custom_title: "تحتاج رعاية طبية خاصة ؟",
     srv_custom_desc: "تواصل معنا مباشرة عبر الواتساب لتنسيق زيارة مخصصة.",
 
     // Shop Modal & Cart
@@ -218,7 +222,7 @@ const translations = {
     cart_empty: "السلة فارغة حالياً.",
     cart_customer_info: "بيانات التواصل لإتمام الطلب",
     shop_success_title: "تم إرسال طلبك بنجاح!",
-    shop_success_desc: "شكراً لتسوقك من Furry4Ever! سيتواصل معك فريقنا قريباً لتأكيد طلبك وتفاصيل التوصيل."
+    shop_success_desc: "شكراً لتسوقك من AnimaCur! سيتواصل معك فريقنا قريباً لتأكيد طلبك وتفاصيل التوصيل."
   }
 };
 
