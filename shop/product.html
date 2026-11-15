@@ -14,15 +14,15 @@
 <body class="bg-[#fbf9f5] text-[#2d2420] min-h-screen">
 
   <!-- Header -->
-  <header class="bg-white border-b border-[#135c59]/10">
+  <header class="bg-white border-b border-[#A9813A]/20">
     <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="/" class="inline-flex items-center gap-2 text-[#135c59] font-extrabold">
+      <a href="../" class="inline-flex items-center gap-2 text-[#9A731B] font-extrabold">
         <i id="back-arrow-icon" class="fa-solid fa-arrow-right"></i>
         <span>AnimaCur</span>
       </a>
 
       <!-- Quick Language Switcher Button -->
-      <button onclick="switchLanguage()" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-[#135c59]/20 text-[#135c59] hover:bg-[#135c59]/10 text-xs font-bold transition">
+      <button onclick="switchLanguage()" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-[#A9813A]/30 text-[#9A731B] hover:bg-[#D4AF6A]/10 text-xs font-bold transition">
         <i class="fa-solid fa-globe"></i>
         <span id="lang-btn-text">English</span>
       </button>
@@ -124,7 +124,7 @@
         container.innerHTML = `
           <div class="text-center py-16">
             <div class="text-red-600 text-lg font-bold mb-3">${txt.not_found}</div>
-            <a href="/" class="inline-block bg-[#135c59] text-white px-5 py-3 rounded-xl text-sm font-bold">
+            <a href="../" class="inline-block bg-[#C19A50] text-[#111114] px-5 py-3 rounded-xl text-sm font-bold">
               ${txt.back_home}
             </a>
           </div>
@@ -134,7 +134,7 @@
 
       try {
         const response = await fetch(
-          `/shop/products/${encodeURIComponent(slug)}/product.json`,
+          `./products/${encodeURIComponent(slug)}/product.json`,
           { cache: "no-cache" }
         );
 
@@ -147,13 +147,13 @@
         const name = getLocalizedText(product.name, currentLang === 'ar' ? 'منتج' : 'Product');
         const category = getLocalizedText(product.category, "");
         const description = getLocalizedText(product.description, "");
-        const image = `/shop/products/${encodeURIComponent(slug)}/${encodeURIComponent(product.image || "image.jpg")}`;
+        const image = `./products/${encodeURIComponent(slug)}/${encodeURIComponent(product.image || "image.jpg")}`;
         const available = product.available !== false;
 
         document.title = `AnimaCur | ${name}`;
 
         container.innerHTML = `
-          <div class="bg-white rounded-3xl border border-[#135c59]/10 shadow-sm overflow-hidden">
+          <div class="bg-white rounded-3xl border border-[#A9813A]/20 shadow-sm overflow-hidden">
             <div class="grid md:grid-cols-2 gap-0">
 
               <!-- Image -->
@@ -164,9 +164,9 @@
               <!-- Details -->
               <div class="p-6 sm:p-10 flex flex-col justify-center">
 
-                ${category ? `<div class="text-xs font-bold text-[#135c59]/60 mb-3">${escapeHtml(category)}</div>` : ""}
+                ${category ? `<div class="text-xs font-bold text-[#9A731B]/60 mb-3">${escapeHtml(category)}</div>` : ""}
 
-                <h1 class="text-2xl sm:text-3xl font-extrabold text-[#135c59] leading-relaxed">
+                <h1 class="text-2xl sm:text-3xl font-extrabold text-[#9A731B] leading-relaxed">
                   ${escapeHtml(name)}
                 </h1>
 
@@ -174,7 +174,7 @@
 
                 <div class="mt-7">
                   ${available ? `
-                    <button onclick="orderProduct()" class="w-full sm:w-auto rounded-2xl bg-[#135c59] text-white px-7 py-4 text-sm font-bold hover:opacity-90 transition flex items-center justify-center gap-2">
+                    <button onclick="orderProduct()" class="w-full sm:w-auto rounded-2xl bg-[#C19A50] text-[#111114] px-7 py-4 text-sm font-bold hover:opacity-90 transition flex items-center justify-center gap-2">
                       <i class="fa-brands fa-whatsapp text-lg"></i>
                       <span>${txt.order_whatsapp}</span>
                     </button>
@@ -185,7 +185,7 @@
                   `}
                 </div>
 
-                <a href="/" class="mt-6 text-sm font-bold text-[#135c59] hover:underline inline-block">
+                <a href="../" class="mt-6 text-sm font-bold text-[#9A731B] hover:underline inline-block">
                   ${txt.back_shop}
                 </a>
 
@@ -203,7 +203,7 @@
           <div class="text-center py-16">
             <div class="text-red-600 text-lg font-bold mb-3">${txt.error_load}</div>
             <p class="text-sm text-[#2d2420]/60 mb-5">${txt.check_file}</p>
-            <a href="/" class="inline-block bg-[#135c59] text-white px-5 py-3 rounded-xl text-sm font-bold">
+            <a href="../" class="inline-block bg-[#C19A50] text-[#111114] px-5 py-3 rounded-xl text-sm font-bold">
               ${txt.back_home}
             </a>
           </div>
