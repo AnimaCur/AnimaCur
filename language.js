@@ -122,7 +122,7 @@ const translations = {
     lang_btn: "English",
 
     // Hero Section
-    hero_badge: "Furry4Ever للرعاية البيطرية",
+    hero_badge: "AnimaCur للرعاية البيطرية",
     hero_title: "أرواحهم هي مهمتنا",
     hero_subtitle: "رعاية بيطرية متخصصة في المنزل",
     btn_book: "احجز زيارة منزلية",
